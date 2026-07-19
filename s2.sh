@@ -21,3 +21,15 @@ cd .. #simboliza carpeta padre contenedora del directorio actual
 cd /
 # se lista todos los archivos y directorios dandole las instrucciones en forma de argumento utilizando la ruta absoluta de carpeta hija
 ls -a /workspaces/60048-INTRODUCCION-UNIX-2-IIA-2A/carpeta/carpeta_hija
+# GNU Compiler
+gcc --version
+# se crea un archivo
+touch
+# para mostrar un editor de texto
+nano miprograma.c
+#Despliega el contenido del archivo
+cat miprograma.c
+#comando para compilar junto con el nombre del programa en forma binaria
+gcc miprograma.c -o miprograma_bin
+# comando de ejecución para el programa 
+./miprograma_bin 
