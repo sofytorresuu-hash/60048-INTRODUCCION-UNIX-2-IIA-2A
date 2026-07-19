@@ -33,3 +33,21 @@ cat miprograma.c
 gcc miprograma.c -o miprograma_bin
 # comando de ejecución para el programa 
 ./miprograma_bin 
+#cambio de directorio a binario
+cd bin
+# lista con pipeline para menos texto
+ls | less
+# muestra un manual de comandos
+man head 
+# muestra la lista desde el inicio de las primeras 7 lineas
+ls | head -n 7
+#muestra la lista desde el final con las últimas 6 filas
+ls | tail -n 6
+#realiza la lista con un filtrado 
+ls | grep "cat"
+#se aplica expresión regular para simplificar resultado poniendo solo los que empiecen con cat
+ls | grep "^cat"
+# al aplicar el $ se limita solo a resultados que empiecen o terminen con cat
+ls | grep "^cat$"
+# comando que indica el tipo de archivo 
+file cat
